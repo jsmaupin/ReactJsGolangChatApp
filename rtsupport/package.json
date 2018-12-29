@@ -1,0 +1,24 @@
+{
+    "name": "rtsupport",
+    "description": "Chat client from a Udemy course.",
+    "homepage": "https://github.com/jsmaupin/rtsupport",
+    "keywords": [],
+    "author": "Jarod Maupin",
+    "contributors": [],
+    "dependencies": {
+        "@babel/core": "^7.0.0-bridge.0",
+        "@babel/preset-env": "^7.2.3",
+        "@babel/preset-react": "^7.0.0",
+        "babel-loader": "^8.0.4",
+        "webpack": "^4.28.2",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "fecha": "^3.0.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jsmaupin/rtsupport.git"
+    },
+    "main": "index.js",
+    "version": "0.0.1"
+}
