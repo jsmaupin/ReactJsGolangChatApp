@@ -37,29 +37,30 @@ class App extends Component {
     onAddUser(user) {
         let {users} = this.state;
         users.push(user);
-        this.setState(users);
+        this.setState({users});
     }
 
-    onEditUser(editUser) {
+    onEditUser(editUser) {        
         let {users} = this.state;
         users = users.map(user => {
-            if (editUser.id == user.id) {
+            if (editUser.id === user.id) {
                 return editUser;
             }
             return user;
         });
-        this.setState(users);
+        this.setState({users});
     }
 
     onRemoveUser(removeUser) {
         let {users} = this.state;
-        users.filter(user => {
+        users = users.filter(user => {
             return user.id !== removeUser.id;
         });
-        this.setState(users);
+        this.setState({users});
     }
 
     setUserName(name) {
+        
         this.socket.emit('user edit', {name});
     }
 
